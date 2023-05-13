@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthropologie.com</title>
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <script src="https://kit.fontawesome.com/e9bb69dc7f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400&family=Noto+Serif&display=swap" rel="stylesheet"> 
+    <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons"></a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="footer-mwk.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+          <style>
+        #container{
+            display :grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, auto);
+            width :90%;
+            margin :auto;
+            gap :15px 20px;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 130px;
+        }
+        #container>div>img{
+            width: 100%;
+            height: 90%;
+            cursor:pointer;
+            transition: transform .2s;
+        }
+        #container>div>img:hover{
+            
+            transform: scale(1.1);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+        #container>div>p{
+            font-size: 13px;
+            font-family:  Avenir Medium,sans-serif;
+            color: inherit;
+            text-align: start;
+        }
+        #container>div>p:hover{
+            color:#167a92;
+            cursor: pointer;
+        }
+        #container1{
+            display :grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, auto);
+            width :90%;
+            margin :auto;
+            gap :15px 20px;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 100px;
+        }
+        #container1>div>img{
+            width: 100%;
+            height: 70%;
+            cursor:pointer;
+        }
+        #container1>div>h2{
+            font-size: 23px;
+            font-family: Spectral Extra Light,serif;
+            font-weight: 100;
+            text-align: start;
+            color: #26262C;
+        }
+        #container1>div>h3{
+            text-align: start;
+            font-size: 18px;
+            color: #26262C;
+            margin:0px 0px 15px;
+            font-weight: 100;
+        }
+        #aboutus{
+            /* border: 1px solid red; */
+            width: 90%;
+            height: auto;
+            margin: auto;
+            border-top: 1px solid #e5e2de;
+            padding-top: 50px;
+        }
+        #aboutus>h2{
+            font-size: 18px;
+            color: #26262C;
+            margin: 0px 0px 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+            padding-top: -10px;
+        }
+        #aboutus>h4{
+            font-size: 15px;
+            margin: 0px 0px 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+        }
+        .dress{
+            color: #167a92;
+            text-decoration: underline;
+            cursor: pointer;
+            padding-bottom: 25px;
+        }
+        .dress:hover{
+            text-decoration: none;
+        }
+
+        .line{
+            text-align: start;
+            text-decoration: underline;
+            color: #167a92;
+            cursor: pointer;
+        }
+        .line:hover{
+            text-decoration: none;
+        }
+
+        .line-text{
+           padding-top: 30px;
+            border-bottom:1px solid #e5e2de;
+            width: 90%;
+            margin: auto;
+        }
+        .line-text>h2{
+          font-size: 18px;
+          font-family: Arial medium, sans-serif;
+          margin: 0px 0px 15px;
+          color: #26262C;
+          font-weight: 555;
+        }
+        .line-text2{
+           /* padding-top: 130px; */
+            border-bottom:1px solid #e5e2de;
+            width: 90%;
+            margin: auto;
+        }
+        .line-text2>h2{
+          font-size: 18px;
+          font-family: Arial medium, sans-serif;
+          margin: 0px 0px 15px;
+          color: #26262C;
+          font-weight: 555;
+        }
+        .line-text3{
+           
+            border-bottom:1px solid #e5e2de;
+            width: 90%;
+            margin: auto;
+        }
+        .line-text3>h2{
+            text-align: center;
+          font-size: 18px;
+          font-family: Arial medium, sans-serif;
+          margin: 0px 0px 15px;
+          color: #26262C;
+          font-weight: 555;
+        }
+        .exclusive{
+            text-align: center;
+            margin-bottom: 100px;
+            margin-top: -30px;
+            font-size: 13px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="promo">
+            <div id="leftslide">
+                <a href=""><img class="slider" src="android-chrome-192x192.png"></img></a>
+            </div>
+            <div id="text-banner">
+                <p id="preheadind"><i>The Gleaming Primrose Event ends tonight!</i></p>
+                <p id="heading">our BESTSELLING mirror is 30% OFF!!</p>
+                <a id="link-client" href="#">ready to ship. ready to give (or get!)</a>
+            </div>
+            <div id="rightslide">
+                <a href=""><img class="slider" src="android-right-192x192.png"></img></a>
+            </div>
+        </div>
+        <div id="utility">
+            <div id="language">
+                <div><img src="globe-svgrepo-com.svg" alt=""></div>
+                <div><p>English  ($)</p></div>
+                <div><img src="down-arrow-svgrepo-com.svg" alt=""></div>
+            </div>
+            <div id="credebility">
+                <div><img src="user-profile-svgrepo-com.svg" alt="profile"></div>
+                <div><a href="SignIn.html">Sing In / Sign Up</a></div>
+            </div>
+        </div>
+    <div id="navbar">
+        <div id="navbar1">
+            <div id="main-secondary">
+                <div id="main"><a href="index.html">DRESS DELIGHT</a></div>
+                <div id="secondary"><a href="#"><img src="https://images.ctfassets.net/5de70he6op10/y1O9tEDOvCGliGUvT9RoJ/eb8ab4734c5e3778b8b61da70ed441ac/AL_NewLogo_2.svg" alt=""></a></div>
+            </div>
+            <div id="search-cart">
+                <div class= "search" id="search">
+                    <a class= "search" href="index.html">Search Delight</a>
+                    <img src="search-svgrepo-com.svg" alt="">
+                </div>
+                <div id="cart_ico">
+                    <a href="checkoutPage.html"><img src="bag-svgrepo-com.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div id="parentvariation">
+            <div id="variation">
+                <div><a id="new" href="#">New!</a></div>
+                <div id="new_content"></div>
+                <div><a id="gift" href="../momgift/giftmom.html">Gifts for Mom</a></div>
+                <div id="gift_content"></div>
+                <div><a id="dress" href="productPage.html">Dresses</a></div>
+                <div id="dress_content"></div>
+                <div><a id="clothing" href="../clothes/clothes.html">clothing</a></div>
+                <div id="clothing_content"></div>
+                <div><a id="shoes" href="../Shoes/Shoes.html">Shoes</a></div>
+                <div id="shoes_content"></div>
+                <div><a id="Accessories" href="../accesssories/Accessories.html">Accessories</a></div>
+                <div id="Accessories_content"></div>
+                <div><a id="furniture" href="#">Home & Furniture</a></div>
+                <div id="furniture_content"></div>
+                <div><a id="beauty" href="../Beauty/Beauty.html">Beauty & Wellness</a></div>
+                <div id="beauty_content"></div>
+                <div><a id="garden" href="../Garden/Garden.html">Garden & Outdoor</a></div>
+                <div id="garden_content"></div>
+                <div><a id="weddingt" href="#">Weddings</a></div>
+                <div id="wedding_content"></div>
+                <div><a id="sale" href="#">Sale</a></div>
+                <div id="sale_content"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="main_container">
+        <div id="grid_container">
+            <div class="pop_up"><a href="#"><img src="https://images.ctfassets.net/5de70he6op10/6O4o9CPoov1N3SUAzpVx0J/5a33425eac3c498bc66a2d0aa4795c67/050222_HPG_LS_M1.jpg?w=1756&q=80&fm=webp" alt=""></a></div>
+            <div class="pop_up"><a href="#"><img src="https://images.ctfassets.net/5de70he6op10/6FzBOZH3ftSw31v7wApRE9/96d12fc9fedd4ae4154d909c021c75ad/050222_HPG_RR_Furniture.jpg?w=856&q=80&fm=webp" alt=""></a></div>
+            <div class="pop_up"><a href="#"><img src="https://images.ctfassets.net/5de70he6op10/1QeC1AgqnnSUUNUm1L8Cop/26d6959e95bb51ff30016138680010bc/050222_HPG_RR_Candles.jpg?w=856&q=80&fm=webp" alt=""></a></div>
+            <div class="pop_up"><a href="#"><img src="https://images.ctfassets.net/5de70he6op10/2cIhOhx0EenQ1hIURAWLK7/7f322ffde6eb24472f9454e18f457027/050222_HPG_2UP_Dresses.jpg?w=856&q=80&fm=webp" alt=""></a></div>
+            <div class="pop_up"><a href="#"><img src="https://images.ctfassets.net/5de70he6op10/3Fp3TqyVqgSjPQZthY3sFD/9386f17ed897837b78eb461bf903c72a/050222_HPG_RR_Swim.jpg?w=856&q=80&fm=webp" alt=""></a></div>
+            <div class="pop_up"><a href="#"><img src="https://images.ctfassets.net/5de70he6op10/4L4MxwDigk4N40JIiWpXeq/264edf2c0e8af695014b8e0c7ad392dd/050222_HPG_LS_M2.jpg?w=1756&q=80&fm=webp" alt=""></a></div>
+            <div class="pop_up"><a href="#"><img src="https://images.ctfassets.net/5de70he6op10/5MuarHK2smpFuUB28seiUk/50482d40225937b5dcd47d597990c52d/050222_HPG_RR_Bedding.jpg?w=856&q=80&fm=webp" alt=""></a></div>
+            <div class="pop_up"><a href="#"><img src="https://images.ctfassets.net/5de70he6op10/j4jfRLSCojibA9tLTz7tq/fe904a67d777bf6af9da224f0e5c227f/050222_HPG_2UP_Sets.jpg?w=856&q=80&fm=webp" alt=""></a></div>
+            <div class="pop_up"><a href="#"><img src="https://images.ctfassets.net/5de70he6op10/7DEijhrVDU6Yq9fW3H4NYu/1ccd807faed448b9ca75bac79944b9c5/050222_HPG_LS_M3.jpg?w=2694&q=80&fm=webp" alt=""></a></div>
+        </div>
+    </div>
+
+    <!-- you may like this part from here -->
+    <div class="line-text2">
+        <h2>You May Also Like</h2>
+    </div>
+    <div id="container">
+            <div>
+              <img src="https://images.urbndata.com/is/image/Anthropologie/64999899_211_b?$an-category$&qlt=80&fit=constrain" alt="">  
+             <a href="../accesssories/Accessories.html"><p>Cozy Scrunchie Set</p></a> 
+            </div>
+            <div>
+                <img src="https://images.urbndata.com/is/image/Anthropologie/37659125_910_b10?$an-category$&qlt=80&fit=constrain" alt="">  
+                <a href="../accesssories/Accessories.html"><p>Monogram Pendant Neckleace</p></a>
+            </div>
+            <div>
+                <img src="https://images.urbndata.com/is/image/Anthropologie/56881774_066_b10?$an-category$&qlt=80&fit=constrain" alt="">  
+               <a href="../Beauty/Beauty.html"><p>Bastide Rose Oliver Hand Cream</p></a>
+            </div>
+            <div>
+                <img src="https://images.urbndata.com/is/image/Anthropologie/68101260_011_b2?$an-category$&qlt=80&fit=constrain" alt="">  
+                <a href="../accesssories/Accessories.html"><p>Linen Baseball Cap</p></a>
+            </div>
+            <div>
+                <img src="https://images.urbndata.com/is/image/Anthropologie/68462258_020_b2?$an-category$&qlt=80&fit=constrain" alt="">
+               <a href="../Shoes/Shoes.html"> <p>Matisse Rogue Slide Sandals</p></a>
+            </div>
+        </div>
+
+        <!-- trending now -->
+
+        <div class="line-text2">
+            <h2>Trending Now</h2>
+        </div>
+
+        <div id="container">
+                <div>
+                    <img src="https://images.urbndata.com/is/image/Anthropologie/66504861_030_b?$an-category$&qlt=80&fit=constrain" alt="">
+                  <a href="../dress/dress.html"><p>Printed Halter Dress</p></a>
+                </div>
+                <div>
+                    <img src="https://images.urbndata.com/is/image/Anthropologie/4122057270385_093_b2?$an-category$&qlt=80&fit=constrain" alt="">
+                   <a href="../dress/dress.html"><p>Paige Colette Mid-Rise Cropped Raw-Hem Flare Jeans</p></a> 
+                </div>
+                <div>
+                    <img src="https://images.urbndata.com/is/image/Anthropologie/4122057270394_091_b2?$an-category$&qlt=80&fit=constrain" alt="">
+                    <a href="../dress/dress.html"><p>Paige Anessa Ultra-High Rise Raw-Hem Wide-Leg Jeans</p></a>
+                </div>
+                <div>
+                    <img src="https://images.urbndata.com/is/image/Anthropologie/45464429AA_095_b2?$an-category$&qlt=80&fit=constrain" alt="">  
+                    <a href="../dress/dress.html"><p>All Roads Yucca Curtain</p></a>
+                </div>
+                <div>
+                    <img src="https://images.urbndata.com/is/image/Anthropologie/55096762_070_a?$an-category$&qlt=80&fit=constrain" alt="">
+                    <a href="../dress/dress.html"><p>Astria Hairpin Set</p></a>
+                </div>
+            </div>
+
+            <!-- More to Explore -->
+
+            <div class="line-text3">
+                <h2>More to Explore</h2>
+            </div>
+
+            <div id="container1">
+                <div>
+                    <img src="https://images.ctfassets.net/5de70he6op10/6fqnRygHuJSypTKaxojLDC/62dd14b7b808b58a09012c535a6bbb8d/041122_HPG_MTE_DenimShop.jpg?w=856&q=80&fm=webp" alt="">
+                    <h2>Good Jeans: The Denim Fit Guide</h2>
+                    <h3>Introducing the perfect pairs for every wear. From rise to size, here's how to find your new favorite jeans.</h3>
+                   <a href="https://www.anthropologie.com/denim-jean-fit-guide"><p class="line">find your fit</p></a> 
+                </div>
+                <div>
+                    <img src="https://images.ctfassets.net/5de70he6op10/5z1SzJjtkNuitP2HKuc7Ww/4f0f76621a8587e50d4b9e96a30edf36/041122_HPG_MTE_GreaterGood.jpg?w=856&q=80&fm=webp" alt="">
+                    <h2>A Greater Good</h2>
+                    <h3>Our priority: to be a force for good, a greater good, in better service of our planet, its people, and our products.</h3>
+                    <a href="https://www.anthropologie.com/stories-community-greater-good"><p class="line">learn more about our journey</p></a>
+                </div>
+                <div>
+                    <img src="https://images.ctfassets.net/5de70he6op10/54SroRrXp9QpYMEn5Zqrvp/c91bcee7f1aad1f53f8ce017576e8985/041122_HPG_MTE_SpringHomeJournal.jpg?w=856&q=80&fm=webp" alt="">
+                    <h2>The Story of Home</h2>
+                    <h3>From front (door) to back(yard), we're reading between the herringbone-inspired lines and handwoven cords of our outdoor collection for spring.</h3>
+                    <a href="https://www.anthropologie.com/mark-d-sikes-collab"><p class="line">shop the collection</p></a>
+                </div>
+            </div>
+
+            <!-- *Exclusions apply – see details . -->
+
+            <footer>
+                <!-- pop-up box -->
+        
+        
+                <div id="about">
+                    <h3>About Us</h3>
+                    <p>Our mission at Anthropologie has always been to surprise and delight you with unexpected, distinctive
+                        finds
+                        for your
+                        closet and home. We source and craft all of our products with care, ensuring that any treasure you find
+                        at
+                        Anthropologie
+                        is unique, just like you. Explore our <a href="">dress shop</a> to find styles and fits perfect for any
+                        occasi...</p>
+                    <a href="" class="readMore">Read More</a>
+                </div>
+                <hr>
+        
+                <!-- signup for mail -->
+                <div id="parentbox">
+                    <div id="child1">
+                        <h3>Sign Up for Email</h3>
+                        <p>Receive new acess to new arrivals, sales, exclusive content, events and much more!</p>
+                    </div>
+                    <div id="child2">
+                        <p>Email Address*</p>
+                        <div>
+                            <input type="text" class="inputEmail" required>
+                            <button type="submit" id="btn_signupMail" onclick="openPopUp()">SUBMIT</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="responsiveChild2">
+                    <p>Email Address*</p>
+                    <div><input type="text" class="inputEmail" required>
+                        <button id="btn_signupMail">SUBMIT</button>
+                    </div>
+                </div>
+        
+                <p class="paraOutOfParentBox">By signing up, you will receive Anthropologie offers, promotions and other
+                    commercial messages. You are
+                    also agreeing to
+                    Anthropologie<span>'</span>s <a href="">Privacy Policy.</a> You may unsubscribe at any time.</p>
+                <hr>
+        
+        
+                <!-- before responsiveness -->
+                <div class="contentBox">
+                    <div class="help">
+                        <p>Help</p>
+                        <ul>
+                            <li><a href="">Track Your Order</a></li>
+                            <li><a href="">Start A Return Or Exchange <br>(US)</a></li>
+                            <li><a href="">Returns & Exchanges</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Customer Service</a></li>
+                            <li><a href="">Current Promotions</a></li>
+                            <li><a href="">Product Recalls</a></li>
+                        </ul>
+                    </div>
+                    <div class="aboutUs">
+                        <p>About us</p>
+                        <ul>
+                            <li><a href="">Our Story</a></li>
+                            <li><a href="">Events</a></li>
+                            <li><a href="">A Greater Good</a></li>
+                            <li><a href="">Diversity & Inclusion</a></li>
+                            <li><a href="">Stories</a></li>
+                        </ul>
+                    </div>
+                    <div class="services">
+                        <p>Services</p>
+                        <ul>
+                            <li><a href="">AnthroPerks</a></li>
+                            <li><a href="">Gift Cards</a></li>
+                            <li><a href="">AnthroLiving B2B</a></li>
+                            <li><a href="">Furniture: Guides & Services</a></li>
+                            <li><a href="">Store Pickup & Collection<br>Points</a></li>
+                            <li><a href="">Klarna</a></li>
+                        </ul>
+                    </div>
+                    <div class="connect">
+                        <p>Connect</p>
+                        <ul>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Stay Connected</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Styling Services</a></li>
+                            <li><a href="">Request A Catalog</a></li>
+                        </ul>
+                    </div>
+                    <div class="locator-mail">
+                        <ul class="listItems">
+                            <li><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp<a href="">Store Locator</a></li>
+                            <li><i class="fa-sharp fa-solid fa-envelope"></i>&nbsp<a href="">Get Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+        
+                <!-- another div for responsiveness -->
+                <div class="responsiveDropDown">
+                    <div class="locator-mail">
+                        <ul class="listItems">
+                            <li><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp<a href="" id="store">Store Locator</a>
+                            </li>
+                            <hr>
+                            <li><i class="fa-sharp fa-solid fa-envelope"></i>&nbsp<a href="" id="mail">Get Email</a></li>
+                            <hr>
+                        </ul>
+                    </div>
+                    <div class="help">
+                        <label for="btn-1">Help<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
+                        <input type="checkbox" id="btn-1">
+                        <!-- <p>Help <span id="plus"><i class="fa-thin fa-plus"></i></span></p> -->
+                        <hr>
+                        <ul>
+                            <li><a href="">Track Your Order</a></li>
+                            <hr>
+                            <li><a href="">Start A Return Or Exchange <br>(US)</a></li>
+                            <hr>
+                            <li><a href="">Returns & Exchanges</a></li>
+                            <hr>
+                            <li><a href="">Shipping</a></li>
+                            <hr>
+                            <li><a href="">Customer Service</a></li>
+                            <hr>
+                            <li><a href="">Current Promotions</a></li>
+                            <hr>
+                            <li><a href="">Product Recalls</a></li>
+                            <hr>
+                        </ul>
+                    </div>
+                    <div class="aboutUs">
+                        <label for="btn-2">About us<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
+                        <input type="checkbox" id="btn-2">
+                        <!-- <p>About us <span id="plus"><i class="fa-thin fa-plus"></i></span></p> -->
+                        <hr>
+                        <ul>
+                            <li><a href="">Our Story</a></li>
+                            <hr>
+                            <li><a href="">Events</a></li>
+                            <hr>
+                            <li><a href="">A Greater Good</a></li>
+                            <hr>
+                            <li><a href="">Diversity & Inclusion</a></li>
+                            <hr>
+                            <li><a href="">Stories</a></li>
+                            <hr>
+                        </ul>
+                    </div>
+                    <div class="services">
+                        <label for="btn-3">services<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
+                        <input type="checkbox" id="btn-3">
+                        <!-- <p>Services <span id="plus"><i class="fa-thin fa-plus"></i></span></p> -->
+                        <hr>
+                        <ul>
+                            <li><a href="">AnthroPerks</a></li>
+                            <hr>
+                            <li><a href="">Gift Cards</a></li>
+                            <hr>
+                            <li><a href="">AnthroLiving B2B</a></li>
+                            <hr>
+                            <li><a href="">Furniture: Guides & Services</a></li>
+                            <hr>
+                            <li><a href="">Store Pickup & Collection<br>Points</a></li>
+                            <hr>
+                            <li><a href="">Klarna</a></li>
+                            <hr>
+                        </ul>
+                    </div>
+                    <div class="connect">
+                        <label for="btn-4">connect<span id="plus"><i class="fa-thin fa-plus"></i></span> <span id="minus"><i
+                                    class="fa-light fa-hyphen"></i></i></span></label>
+                        <input type="checkbox" id="btn-4">
+                        <!-- <p>Connect <span id="plus"><i class="fa-thin fa-plus"></i></span></p> -->
+                        <hr>
+                        <ul>
+                            <li><a href="">Contact Us</a></li>
+                            <hr>
+                            <li><a href="">Stay Connected</a></li>
+                            <hr>
+                            <li><a href="">Careers</a></li>
+                            <hr>
+                            <li><a href="">Styling Services</a></li>
+                            <hr>
+                            <li><a href="">Request A Catalog</a> </li>
+                            <hr>
+                        </ul>
+                    </div>
+                </div>
+        
+        
+                <!-- upto here -->
+        
+                <div class="logos">
+                    <div class="appleLogo">
+                        <a href="https://apps.apple.com/us/app/anthropologie/id922496703"><img id="apple"
+                                src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg"
+                                alt="apple logo"></a>
+                    </div>
+                    <div class="remLogos">
+                        <a href="https://www.pinterest.com/anthropologie/"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/Anthropologie"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://twitter.com/anthropologie"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <img id="endBar"
+                    src="https://images.ctfassets.net/5de70he6op10/2Lh06CXT4AzVnj4LxvGsQD/a424e10a3b8c9e2e270dc22505bfbfa6/022421_SiteFooter_SMS_SIgnUp.jpg"
+                    alt="endBar">
+                <img id="responsiveEndBar"
+                    src="https://images.ctfassets.net/5de70he6op10/ZFKP51BBmuPpIh1BnlP9f/241ab62f70aa3581f4f33abd45f1d195/022421_SiteFooter_SMS_SIgnUp_SS.jpg"
+                    alt="another end bar">
+                <div class="countries">
+                    <a href="">US<span>&nbsp</span></a>&nbsp
+                    &nbsp<a href="">France<span>&nbsp</span></a>&nbsp
+                    &nbsp<a href="">Germany<span>&nbsp</span></a> &nbsp
+                    &nbsp<a href="">Italy<span>&nbsp</span></a>&nbsp
+                    &nbsp<a href="">Spain<span>&nbsp</span></a>&nbsp
+                    &nbsp<a href="">UK</a>
+                </div>
+                <div class="base-tags">
+                    <div class="terms-conditions">
+                        <a href="">Privacy Policy<span>&nbsp |</span></a>
+                        <a href="">&nbspTerms of Use<span>&nbsp |</span></a>
+                        <a href="">&nbspCA Transparency<span>&nbsp |</span></a>
+                        <a href="">&nbspAccessibility<span>&nbsp |</span></a>
+                        <a href="">&nbspURBN.com<span>&nbsp |&nbsp</span></a>
+                        <a href="" id="forCAResidents">For CA Residents</a>
+                    </div>
+                    <div class="copyRights">
+                        <p>2022 URBN.com. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        
+           
+</body>
+</html>
+<script>
+    window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>

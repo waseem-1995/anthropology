@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antroplogie</title>
+    <link rel="stylesheet" href="checkoutPage.css">
+
+    <script src="https://kit.fontawesome.com/38439e7720.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div id="HomePageContent">
+        <!-- <label for="">Navigation Bar</label> -->
+        <div id="OfferNav">Sale!  Get additional $50 OFF on minimum purchase of $800 "50ANTHRO"</div>
+        <div id="AnthroNav_Bar">
+            <div id="NavDiv_a">
+                <div id="SiteName" onclick="window.location.href='index.html'">
+                    <p>ANTHROPOLOGIE</p>
+                </div>
+                <div id="SearchBar">
+                    <div>
+                        <input id="searchTxt" type="text" placeholder="Search">
+                    </div>
+                    <div id="iconSearch">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </div>   
+                </div>
+                <div id="SignIn" onclick="window.location.href='SignUp_Page.html'">
+                    <ion-icon id="iconNav" name="person-outline"></ion-icon>
+                </div>
+                <div id="Cart" onclick="window.location.href='CartPage.html'">
+                    <ion-icon id="iconNav" name="bag-outline"></ion-icon>
+                </div>
+            </div>
+            <div id="NavDiv_b">
+                <div id="TagsNav"  style="margin-left: 3%" onclick="window.location.href='Dresses.html'">Dresses</div>
+                <div id="TagsNav" onclick="window.location.href='ClothingPage.html'">Clothing</div>
+                <div id="TagsNav" onclick="window.location.href='ShoesPage.html'">Shoes</div>
+                <div id="TagsNav" onclick="window.location.href='index.html'">Accessories</div>
+                <div id="TagsNav1" onclick="window.location.href='index.html'">Home & Furniture</div>
+                <div id="TagsNav1" onclick="window.location.href='index.html'">Beauty & Wellness</div>
+                <div id="TagsNav" onclick="window.location.href='Dresses.html'">Weddings</div>
+                <div id="TagsNav1" onclick="window.location.href='index.html'">Gifts & Candles</div>
+            </div>            
+        </div>
+
+<!-- cartpage  -->
+    <div id="cartPageFinal">
+      <div id="productSectionCart">
+        <div>
+          <h1>Basket</h1>
+          <span>Delivery Option</span>
+        </div>
+        <hr />
+        <table id="CartTableProduct">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Item</th>
+              <th>Item Price</th>
+              <th>Quantity</th>
+              <th>Total Price</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- appentding the code here -->
+          </tbody>
+        </table>
+      </div>
+      <div id="productSectionPayment">
+        <h2>Order Summary</h2>
+        <div>
+          <ul>
+            <li>
+              <p>Subtotal</p>
+              <p id="subtotal"></p>
+            </li>
+            <li>
+              <p>Shipping</p>
+              <p>TBD</p>
+            </li>
+            <li>
+              <p>Tax</p>
+              <p>$ 0.0</p>
+            </li>
+            <li>
+              <p>Total</p>
+              <p id="total"></p>
+            </li>
+
+            <button class="ProceedToCheckout-btn"><a id="link" href="payment.html">Proceed To Payment</a></button>
+            
+          </ul>
+
+          
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="checkoutPage.js"></script>
